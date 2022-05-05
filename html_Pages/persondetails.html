@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/persondetails.css">
+    <title>AddressBook App</title>
+</head>
+<body>
+    <header class="header-content header">
+		<div class="logo-content">
+			<img src="../assets/icon/icons8-address-book-2-48.png" alt="" />
+			<div>
+				<span class="address-text">Address</span><br />
+				<span class="address-text address-book">Book</span>
+                <span class="head-text">Address Book UI/UX Design</span>
+			</div>
+		</div>
+  </header>
+  <body>
+    <div class="main-content">
+        <div class="header-content">
+            <div class="emp-detail-text">
+                Person Details
+            </div>
+            <a href="Add.html" class="add-button">
+                <img src="../assets/icons/add-24px.svg" alt="Add User Logo">Add
+                User
+            </a>
+        </div>
+    </div>
+    <table id="table-display" class="table">
+        <tr>
+            <th></th>
+            <th>Full Name</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+        </tr>
+        <tr>
+            <td>
+                <img class="profile" src="../assets/profile-images/Ellipse -2.png" alt="">
+            </td>
+            <td>Adesh Maske</td>
+            <td>7038455699</td>
+            <td>
+                <div class="dept-label">Solapur</div>
+            </td>
+            <td>Maharashtra</td>
+            <td>413406</td>
+            <td>
+                <img id="1" onclick="remove(this)"
+                    src="../assets/icons/delete-black-18dp.svg"
+                    alt="delete">
+                <img id="1" onclick="update(this)"
+                    src="../assets/icons/create-black-18dp.svg" alt="edit">
+            </td>
+        </tr>
+    </table>
+    <script defer src="../js/home.js"></script>
+    <script defer src="../js/utility.js"></script>
+</body>
+</html>
